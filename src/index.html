@@ -3,11 +3,366 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <title>Document</title>
 </head>
 <body>
   
+  <div class="c-nav" id="nav">
+    <div class="c-nav__logo">
+      <img src="./images/logo.jpg" alt="" class="c-nav__logo-hero">
+    </div>
+    <div class="c-nav__main">
+      <ul data-behavior="nav_links" class="c-nav__links">
+        <li data-behavior="nav_list"><a href="#">Home</a></li>
+        <li data-behavior="nav_list" id="linkActive"><a href="#" id="nav_link-hover">About Us</a>
+          <div id="linkDrop" class="c-nav__links_drop">
+              <ul class="c-nav__links_drop-section c-nav__links_drop-section-line">
+                <li class="c-nav__links_drop-section-item"><a href="#">Welcome from the Headteacher</a></li>
+                <li class="c-nav__links_drop-section-item"><a href="#">Vision, Ethos & Values</a></li>
+                <li class="c-nav__links_drop-section-item"><a href="#">School Development Plan</a></li>
+                <li class="c-nav__links_drop-section-item"><a href="#">The Teaching School Alliance</a></li>
+                <li class="c-nav__links_drop-section-item"><a href="#">History</li>
+              </ul>
+              <ul class="c-nav__links_drop-section">
+                <li class="c-nav__links_drop-section-item"><a href="#">Ofsted & Performance</a></li>
+                <li class="c-nav__links_drop-section-item"><a href="#">Celebrating Success</a></li>
+                <li class="c-nav__links_drop-section-item"><a href="#">Our People</a></li>
+                <li class="c-nav__links_drop-section-item"><a href="#">Governors</a></li>
+                <li class="c-nav__links_drop-section-item"><a href="#">Vacancies</a></li>
+              </ul>
+          </div>
+        </li>
+        <li data-behavior="nav_list"><a href="#">Curriculum</a></li>
+        <li data-behavior="nav_list"><a href="#">Parents</a></li>
+        <li data-behavior="nav_list"><a href="#">News & Events</a></li>
+        <li data-behavior="nav_list"><a href="#">Contact Us</a></li>
+      </ul>
 
+      <div class="c-nav__media">
+        <div class="c-nav__media-search"><i class="fa fa-search"></i></div>
+        <div class="c-nav__media-links"><i class="fa fa-twitter"></i></div>
+        <div class="c-nav__media-links"><i class="fa fa-google"></i></div>
+        <div class="c-nav__media-links"><i class="fa fa-ellipsis-h"></i></div>
+      </div>
+    </div>
+    
+    <div data-behavior="burger" class="c-nav__burger">
+      <div class="c-nav__burger-top"></div>
+      <div class="c-nav__burger-middle"></div>
+      <div class="c-nav__burger-bottom"></div>
+    </div>
+  </div>
+
+  <div class="c-header">
+    <div class="c-header__nav">
+      <p class="c-header__nav-intro">Announcement: School in top 5% of schools in the country for achievement <a href="#">Read More</a></p>
+    </div>
+    <div class="c-header__main">
+      <h3 class="c-header__main-title">believe without limits</h3>
+      <p class="c-header__main-text">explore</p>
+      <a href="#mainSection"><i class="fa fa-arrow-down"></i></a>
+    </div>
+  </div>
+  
+  <div class="c-main__container" id="mainSection">
+
+    <div class="c-intro">
+      <div class="c-intro__container">
+        <div class="c-intro__text c-intro__layout">
+          <div class="c-intro__text-preface">
+            <h2 class="c-intro__text-preface--title">Welcome</h2>
+            <p class="c-intro__text-preface--header">Welcome to the school where high expectations in terms of learning and behaviour ensure that girls flourish.</p>
+            <p class="c-intro__text-preface--main">We are now in our fantanstic new building with facilties which are second to none, providing an exceptional learning environment. This can only lead to even greater achievements. We are a school where young women achieve academic excellence, where they are encouraged to participate and excel in artistic and sporting events...</p>
+          </div>    
+          <div class="o-button c-intro__button">
+            <button class="o-button__btn c-intro__button-btn">Read more</button>
+          </div>
+        </div>
+        <div class="c-intro__images c-intro__layout">
+          <div class="c-intro__images-container">
+            <img src="./images/apply.jpg" alt="">
+          </div>
+          <div class="c-intro__images-container">
+            <img src="./images/ourwork.jpg" alt="">
+          </div>
+          <div class="c-intro__images-container">
+            <img src="./images/studentarea.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="newsCarousel" class="carousel slide c-calender" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <a class="carousel-control-prev" href="#newsCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon c-carousel__control--prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#newsCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon c-carousel__control--next-icon" aria-hidden="true"></span>
+        </a>
+        <div class="c-carousel__indicators">
+          <div class="c-carousel__indicators--slide">
+            <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#newsCarousel" data-slide-to="1"></li>
+            <li data-target="#newsCarousel" data-slide-to="2"></li>
+          </div>
+          <div class="c-carousel__indicators--button">
+            <div class="o-button">
+              <button class="o-button__btn c-carousel__indicators--button_btn">View All <i class="fa fa-long-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </ol>
+      <div class="carousel-inner c-carousel__inner">
+        <div class="carousel-item active">
+          <div class="c-carousel__inner-container">
+            <h1 class="c-carousel__inner-title">News</h1>
+            <div class="c-carousel__inner-grid">
+              <div class="c-carousel__inner-item c-carousel__inner-first">   
+                <div class="c-carousel__inner-first--image">
+                  <img src="./images/obama.jpg" alt="">
+                </div>
+                <div class="c-carousel__inner-first--content">
+                  <div class="c-carousel__inner-first--head">
+                    <p class="c-carousel__inner-first--head-date">Posted on: 06/01/2017</p>
+                    <h2 class="c-carousel__inner-first--head-title">Michelle Obama's 'amazing' impact on British schoolgirls</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="c-carousel__inner-item c-carousel__inner-second">
+                <div class="c-carousel__inner-second--head">
+                  <p class="c-carousel__inner-second--head-date">Posted on: 03/02/2017</p>
+                  <h2 class="c-carousel__inner-second--head-title">Jack Petchey Foundation ceremony</h2>
+                </div>
+                <div class="c-carousel__inner-second--main">
+                  <p>The following award winners were presented with their Jack Petchey Islington Award for their excellence in achievement and leadership.</p>
+                </div>
+                <div class="c-carousel__inner-second--footer">
+                  <li>Ayan Mohamed</li>
+                  <li>Tasnim Begum</li>
+                  <li>Safiya Abdilahi...</li>
+                </div>
+              </div>
+              <div class="c-carousel__inner-item c-carousel__inner-third">
+                <div class="c-carousel__inner-third-head">
+                  <p class="c-carousel__inner-third--head-date">Posted on: 28/02/2017</p>
+                  <h2 class="c-carousel__inner-third--head-title">Rock Challenge Success</h2>
+                </div>
+                <div class="c-carousel__inner-third--main">
+                  <p>On Wednesday 22nd February, the 2017 Rock Challenge team travelled to Stevenage to compete in the event and ranked 3rd overall! We also won awards for excellence in the following categories: soundtrack, concept, visual enhancement, video performance and entertainment...<br />Additionally, we were awarded special recognition for cultural and educational...</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="c-carousel__inner-container">
+            <h1 class="c-carousel__inner-title">News</h1>
+            <div class="c-carousel__inner-grid">
+              <div class="c-carousel__inner-item c-carousel__inner-first">   
+                <div class="c-carousel__inner-first--image">
+                  <img src="./images/obama.jpg" alt="">
+                </div>
+                <div class="c-carousel__inner-first--content">
+                  <div class="c-carousel__inner-first--head">
+                    <p class="c-carousel__inner-first--head-date">Posted on: 06/01/2017</p>
+                    <h2 class="c-carousel__inner-first--head-title">Michelle Obama's 'amazing' impact on British schoolgirls</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="c-carousel__inner-item c-carousel__inner-second">
+                <div class="c-carousel__inner-second--head">
+                  <p class="c-carousel__inner-second--head-date">Posted on: 03/02/2017</p>
+                  <h2 class="c-carousel__inner-second--head-title">Jack Petchey Foundation ceremony</h2>
+                </div>
+                <div class="c-carousel__inner-second--main">
+                  <p>The following award winners were presented with their Jack Petchey Islington Award for their excellence in achievement and leadership.</p>
+                </div>
+                <div class="c-carousel__inner-second--footer">
+                  <li>Ayan Mohamed</li>
+                  <li>Tasnim Begum</li>
+                  <li>Safiya Abdilahi...</li>
+                </div>
+              </div>
+              <div class="c-carousel__inner-item c-carousel__inner-third">
+                <div class="c-carousel__inner-third-head">
+                  <p class="c-carousel__inner-third--head-date">Posted on: 28/02/2017</p>
+                  <h2 class="c-carousel__inner-third--head-title">Rock Challenge Success</h2>
+                </div>
+                <div class="c-carousel__inner-third--main">
+                  <p>On Wednesday 22nd February, the 2017 Rock Challenge team travelled to Stevenage to compete in the event and ranked 3rd overall! We also won awards for excellence in the following categories: soundtrack, concept, visual enhancement, video performance and entertainment...<br />Additionally, we were awarded special recognition for cultural and educational...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="c-carousel__inner-container">
+            <h1 class="c-carousel__inner-title">News</h1>
+            <div class="c-carousel__inner-grid">
+              <div class="c-carousel__inner-item c-carousel__inner-first">   
+                <div class="c-carousel__inner-first--image">
+                  <img src="./images/obama.jpg" alt="">
+                </div>
+                <div class="c-carousel__inner-first--content">
+                  <div class="c-carousel__inner-first--head">
+                    <p class="c-carousel__inner-first--head-date">Posted on: 06/01/2017</p>
+                    <h2 class="c-carousel__inner-first--head-title">Michelle Obama's 'amazing' impact on British schoolgirls</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="c-carousel__inner-item c-carousel__inner-second">
+                <div class="c-carousel__inner-second--head">
+                  <p class="c-carousel__inner-second--head-date">Posted on: 03/02/2017</p>
+                  <h2 class="c-carousel__inner-second--head-title">Jack Petchey Foundation ceremony</h2>
+                </div>
+                <div class="c-carousel__inner-second--main">
+                  <p>The following award winners were presented with their Jack Petchey Islington Award for their excellence in achievement and leadership.</p>
+                </div>
+                <div class="c-carousel__inner-second--footer">
+                  <li>Ayan Mohamed</li>
+                  <li>Tasnim Begum</li>
+                  <li>Safiya Abdilahi...</li>
+                </div>
+              </div>
+              <div class="c-carousel__inner-item c-carousel__inner-third">
+                <div class="c-carousel__inner-third-head">
+                  <p class="c-carousel__inner-third--head-date">Posted on: 28/02/2017</p>
+                  <h2 class="c-carousel__inner-third--head-title">Rock Challenge Success</h2>
+                </div>
+                <div class="c-carousel__inner-third--main">
+                  <p>On Wednesday 22nd February, the 2017 Rock Challenge team travelled to Stevenage to compete in the event and ranked 3rd overall! We also won awards for excellence in the following categories: soundtrack, concept, visual enhancement, video performance and entertainment...<br />Additionally, we were awarded special recognition for cultural and educational...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="calenderCarousel" class="carousel slide c-calender" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <a class="carousel-control-prev" href="#calenderCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon c-calender__control--prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#calenderCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon c-calender__control--next-icon" aria-hidden="true"></span>
+        </a>
+        <div class="c-calender__indicators">
+          <div class="c-calender__indicators--slide">
+            <li data-target="#calenderCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#calenderCarousel" data-slide-to="1"></li>
+            <li data-target="#calenderCarousel" data-slide-to="2"></li>
+          </div>
+          <div class="c-calender__indicators--button">
+            <div class="o-button">
+              <button class="o-button__btn c-calender__indicators--button_btn">View All <i class="fa fa-long-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </ol>
+      <div class="carousel-inner c-calender__inner">
+        <div class="carousel-item active">
+          <div class="c-calender__inner-container">
+            <h1 class="c-calender__inner-title">Calender</h1>
+            <div class="c-calender__inner-image"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="c-calender__inner-container">
+            <h1 class="c-calender__inner-title">Calender</h1>
+            <div class="c-calender__inner-image"></div>
+          </div>
+        </div>
+      </div>    
+    </div>
+    
+    <div class="c-footer">
+      <div class="c-footer__scroll">
+        <a href="#nav"><i class="fa fa-arrow-up"></i></a>
+        <p>Back to Top</p>
+      </div>
+      <div class="c-footer__main">
+        <div class="c-footer__main-contact">
+          <div class="c-footer__main-contact--us">
+            <h2>Contact Us</h2>
+            <ul class="c-footer__main-contact--us_list">
+              <li>Headteacher: Name</li>
+              <li>Address</li>
+              <li>T: 02078370739</li>
+              <li>admin@email.com</li>
+            </ul>
+          </div>
+          <div class="c-footer__main-contact--media">
+            <h2>Follow Us</h2>
+            <div class="c-footer__main-contact--media_link">
+              <i class="fa fa-twitter"></i><p>"TWITTER_NAME</p>
+            </div>
+        </div>
+        </div>
+        <div class="c-footer__main-links">
+          <h2>Quick Links</h2>
+          <div class="c-footer__main-links__container">
+            <div class="c-footer__main-links__container-inner">
+              <li class="c-footer__main-links--list">
+                <i class="fa fa-long-arrow-right"></i><a href="#">Ofsted Report</a>
+              </li>
+              <li class="c-footer__main-links--list">
+                <i class="fa fa-long-arrow-right"></i><a href="#">Exam Results</a>
+              </li>
+              <li class="c-footer__main-links--list">
+                <i class="fa fa-long-arrow-right"></i><a href="#">School Email</a>
+              </li>
+              <li class="c-footer__main-links--list">
+                <i class="fa fa-long-arrow-right"></i><a href="#">Prospectus</a>
+              </li>
+              <li class="c-footer__main-links--list">
+                <i class="fa fa-long-arrow-right"></i><a href="#">Sixth Form</a>
+              </li>
+            </div>
+            <div class="c-footer__main-links__container-inner">
+              <li class="c-footer__main-links--list">
+                <i class="fa fa-long-arrow-right"></i><a href="#">Newsletters</a>
+              </li>
+              <li class="c-footer__main-links--list">
+                <i class="fa fa-long-arrow-right"></i><a href="#">CC4 Anywhere</a>
+              </li>
+              <li class="c-footer__main-links--list">
+                <i class="fa fa-long-arrow-right"></i><a href="#">Vacancies</a>
+              </li>
+              <li class="c-footer__main-links--list">
+                <i class="fa fa-long-arrow-right"></i><a href="#">Parent Comms</a>
+              </li>
+              <li class="c-footer__main-links--list">
+                <i class="fa fa-long-arrow-right"></i><a href="#">Library Catalogue</a>
+              </li>
+            </div>
+          </div>
+          
+        </div>
+        <div class="c-footer__main-location">
+          <h2>Map</h2>
+          <iframe class="c-footer__main-location--map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18870.699841376092!2d-1.7634926104492186!3d53.7567769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1573487135458!5m2!1sen!2suk"></iframe>
+          <div class="o-button">
+            <button class="o-button__btn c-footer__main-location--btn">Get Directions <i class="fa fa-long-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="c-footer__links">
+        <li class="c-footer__links-list"><a href="#">Privacy Policy</a></li>
+        <i class="fa fa-circle"></i>
+        <li class="c-footer__links-list"><a href="#">Terms of Use</a></li>
+        <i class="fa fa-circle"></i>
+        <li class="c-footer__links-list"><a href="#">Sitemap</a></li>
+        <i class="fa fa-circle"></i>
+        <li class="c-footer__links-list"><a href="#">High Visibility Version</a></li>
+        <i class="fa fa-circle"></i>
+        <li class="c-footer__links-list"><a href="#">Cookie Usage</a></li>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

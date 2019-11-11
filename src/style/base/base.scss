@@ -1,0 +1,19 @@
+body {
+  border-top: 5px solid $main;
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+textarea:focus, input:focus, button:focus {
+  outline: none;
+}

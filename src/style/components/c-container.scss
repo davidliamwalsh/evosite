@@ -1,0 +1,10 @@
+.c-main__container {
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (max-width: $tablet-break) {
+  .c-main__container {
+    width: 100%;
+  }
+}

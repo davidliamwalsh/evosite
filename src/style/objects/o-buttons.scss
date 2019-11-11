@@ -1,0 +1,14 @@
+.o-button {
+  &__btn {
+    border-radius: 15px;
+    color: #fff;
+    font-size: 8px;
+    border: 0;
+    padding: 1em 2em;
+
+    .fa {
+      font-size: 10px;
+      padding-left: 5px;
+    }
+  }
+}

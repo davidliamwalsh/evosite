@@ -1,0 +1,162 @@
+.c-carousel {
+
+  &__control--prev-icon,
+  &__control--next-icon {
+    align-self: flex-start;
+    color: #fff;
+  }
+
+  &__indicators {
+    display: flex;
+    flex-direction: column;
+    &--slide {
+      display: flex;
+      margin: auto;
+
+      li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+      }
+    }
+    &--button {
+      &_btn {
+        background: #642d8c;
+      }
+    }
+  }
+
+  &__inner {
+    background: $carousel;
+    height: 90vh;
+
+    &-container {
+      padding: 4em;
+    }
+
+    &-title {
+      display: block;
+      font-size: 35px;
+      font-weight: 300;
+      color: #fff;
+    }
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: .5em;
+      padding: 1em 0;
+    }
+
+    &-item {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+      justify-content: space-evenly;
+    }
+
+    &-first {
+      justify-content: start;
+
+      &--image {
+        img {
+          width: 100%;
+        }
+      }
+      
+      &--content {
+        padding: 1em;
+      }
+      &--head {
+        &-date {
+          color: $carousel-date;
+          font-size: 8px;
+        }
+        &-title {
+          font-size: 12px;
+          color: #4e5050;
+        }
+      }
+    }
+    &-second {
+      padding: 1em;
+      &--head {
+        &-date {
+          color: $carousel-date;
+          font-size: 8px;
+        }
+        &-title {
+          font-size: 12px;
+          color: #652e8d;
+        }
+      }
+      &--main {
+        color: #4e5050;
+      }
+      &--footer {
+        color: #4e5050;
+      }
+    }
+    &-third {
+      padding: 1em;
+      border-radius: 5px;
+      &--head {
+        &-date {
+          color: $carousel-date;
+          font-size: 8px;
+        }
+        &-title {
+          font-size: 12px;
+          color: #4e5050;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-break) {
+  .c-carousel__inner {
+    height: auto;
+
+    &-container {
+      padding: 2em;
+    }
+
+    &-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &-item {
+      max-width: 48%;
+      max-height: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &-second--footer {
+      overflow: hidden;
+      text-overflow: ellipsis ;
+    }
+    &-third {
+      margin: 1em 0;
+      &--main {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    } 
+  }
+}
+
+@media screen and (max-width: $carousel-items) {
+  .c-carousel__inner {
+
+    &-container {
+      padding: 1em;
+    }
+
+    &-second--main {
+      overflow: hidden;
+      text-overflow: ellipsis; 
+    }
+  }
+}

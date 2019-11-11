@@ -1,0 +1,65 @@
+.c-intro {
+  &__button-btn {
+    background: $main;
+  }
+
+  &__container {
+    padding: 2em;
+    margin: auto;
+    display: block;
+  }
+
+  &__layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    &-preface {
+      &--title {
+        color: $main;
+        font-size: 35px;
+        font-weight: 300;
+        padding: .5em 0;
+      }
+      &--header {
+        color: #4e5050;
+        font-size: 14px;
+        padding: .5em 0;
+      }
+      &--main {
+        color: $main;
+        font-size: 12px;
+        padding: .5em 0;
+      }
+    }
+  }
+
+  &__images {
+    &-container {
+      padding: .5em 0;
+    }
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .c-intro {
+
+    &__container {
+      padding: 5em;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 3em;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}

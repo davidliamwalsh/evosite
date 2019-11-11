@@ -1,0 +1,55 @@
+.c-calender {
+
+  &__control--prev-icon,
+  &__control--next-icon {
+    align-self: flex-start;
+    filter: invert(100%);
+  }
+
+  &__indicators {
+    display: flex;
+    flex-direction: column;
+    &--slide {
+      display: flex;
+      margin: auto;
+      filter: invert(100%);
+
+      li {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+      }
+    }
+    &--button {
+      &_btn {
+        background: #642d8c;
+      }
+    }
+  }
+  
+  &__inner {
+    background:#fff;
+    height: 90vh;
+
+    &-container {
+      padding: 4em;
+    }
+
+    &-title {
+      display: block;
+      font-size: 35px;
+      font-weight: 300;
+      color: $calendar;
+    }
+
+    &-image {
+      background-image: url('../images/calender.jpg');
+      height: 50vh;
+      background-position: center center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      background-size: cover;
+      background-size: 780px 200px
+    }
+  }
+}
