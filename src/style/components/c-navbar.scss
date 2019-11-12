@@ -107,7 +107,7 @@
 
   .fa-search {
     color: $main;
-    font-size: 13px;
+    font-size: 13px;  
 
     &:hover {
       color: $nav-link-hover;
@@ -119,6 +119,9 @@
   .fa-ellipsis-h {
     color: #fff;
     font-size: 13px;
+    display: block;
+    padding-top: 3px;
+    padding-left: 3px;
 
     &:hover {
       color: $nav-link-hover;
