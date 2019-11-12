@@ -1,0 +1,162 @@
+.c-footer {
+  margin-top: 1em;
+  background: $footer;
+  color: #fff;
+  padding: 1em;
+
+  &__scroll {
+    text-align: center;
+
+    .fa {
+      color: #fff;
+      font-weight: 200;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__main {
+    padding: 0 1em;
+    h2 {
+      font-size: 20px;
+      padding: .5em 0;
+    }
+    .fa {
+      font-size: 12px;
+    }
+    a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    &-contact {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: .5em;
+
+      &--us {
+        &_list {
+          padding: 0;
+
+          li {
+            padding: $footer-item_padding;
+            font-size: 12px;
+          }
+        }
+      }
+
+      &--media {
+        &_link {
+          display: flex;
+
+          p {
+            margin: 0;
+            font-size: 14px;
+          }
+          .fa {
+            border-radius: 100%;
+            background: #fff;
+            color: #4d4e4e;
+            padding: 6px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    &-links {
+      display: block;
+      padding: 1em;
+
+      &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      &--list {
+        padding: $footer-item_padding;
+        a {
+          padding-left: 5px;
+        }
+
+      }
+    }
+
+    &-location {
+      display: block;
+      padding: 1em;
+
+      &--map {
+        width: 70%;
+        margin: $footer-item_padding;
+      }
+
+      &--btn {
+        background: #8b8c8c;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    padding: 0 2em;
+
+    a {
+      font-size: 6px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .fa {
+     font-size: 2px;
+     padding: 15px 3px; 
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-break) {
+  .c-footer {
+    padding: 1em;
+  
+    &__main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 4em;
+  
+      &-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1em;
+      }
+  
+      &-links {
+        display: block;
+        padding: 1em;
+  
+        &__container {
+          display: block;
+        }
+      }
+  
+      &-location {
+        display: block;
+        padding: 1em;
+  
+        &--map {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  
+    &__links {
+      padding: 0 5em;
+  
+      a {
+        font-size: 10px;
+      }
+    }
+  }
+}
