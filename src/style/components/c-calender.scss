@@ -29,10 +29,10 @@
   
   &__inner {
     background:#fff;
-    height: 90vh;
+    height: 70vh;
 
     &-container {
-      padding: 4em;
+      padding: 2em 4em;
     }
 
     &-title {
@@ -44,12 +44,33 @@
 
     &-image {
       background-image: url('../images/calender.jpg');
-      height: 50vh;
+      height: 45vh;
       background-position: center center;
       background-repeat: no-repeat;
-      object-fit: cover;
-      background-size: cover;
-      background-size: 75vw;
+      background-position: top left;
+      background-size: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .c-calender {
+    
+    &__inner {
+      height: 60vh;
+
+      &-container {
+        padding: 1em 2em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .c-calender {
+    
+    &__inner {
+      height: 50vh;
     }
   }
 }
