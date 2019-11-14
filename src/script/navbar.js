@@ -3,7 +3,10 @@ const nav = document.querySelector("ul[data-behavior='nav_links']")
 const navLinks = document.querySelectorAll("li[data-behavior='nav_list']")
 const linkHover = document.getElementById('nav_link-hover')
 const linkDrop = document.getElementById('linkDrop')
-const linkActive = document.getElementById('linkActive')
+
+const burgerTop = document.querySelector("div[data-behavior='burgerTop']")
+const burgerMiddle = document.querySelector("div[data-behavior='burgerMiddle']")
+const burgerBottom = document.querySelector("div[data-behavior='burgerBottom']")
 
 const navOpen = () => {
   nav.classList.toggle('c-nav--active')
@@ -15,6 +18,10 @@ const navOpen = () => {
       link.style.animation = `navLinkFade 1s ease forwards ${index / 7 + 0.2}s`
     }
   })
+
+  burgerTop.classList.toggle('c-nav__burger-top')
+  burgerMiddle.classList.toggle('c-nav__burger-middle')
+  burgerBottom.classList.toggle('c-nav__burger-bottom')
 }
 
 function dropOpen() {

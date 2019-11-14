@@ -180,5 +180,15 @@
       transform: translateX(0%);
       z-index: 1;
     }
+
+    &__burger-top {
+      transform: rotate(-45deg) translateY(10px);
+    }
+    &__burger-middle {
+      opacity: 0;
+    }
+    &__burger-bottom {
+      transform: rotate(45deg) translateY(-10px);
+    }
   }
 }
