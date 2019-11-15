@@ -182,13 +182,13 @@
     }
 
     &__burger-top {
-      transform: rotate(-45deg) translateY(10px);
+      transform: rotate(-140deg) translateY(-10px);
     }
     &__burger-middle {
       opacity: 0;
     }
     &__burger-bottom {
-      transform: rotate(45deg) translateY(-10px);
+      transform: rotate(140deg) translateY(9px);
     }
   }
 }
